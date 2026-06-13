@@ -1,12 +1,16 @@
 # LinkVault 
 
-A URL shortening service built with Java, Spring Boot, and MySQL.
+A URL shortening backend service built using Java Spring Boot and MySQL.
 
-## Current Features
+## Features
 
-- Create shortened URLs
-- Store URL mappings in MySQL
-- REST API using Spring Boot
+- Create short URLs
+- Redirect to original URLs
+- Prevent duplicate URL creation
+- Track URL clicks
+- View URL analytics
+- Request validation
+- Global exception handling
 
 ## Tech Stack
 
@@ -15,6 +19,10 @@ A URL shortening service built with Java, Spring Boot, and MySQL.
 - MySQL
 - Maven
 
-## Status
+## APIs
 
-🚧 In Progress
+POST /api/urls
+
+GET /{shortCode}
+
+GET /api/urls/{shortCode}/stats
